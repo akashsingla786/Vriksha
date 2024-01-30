@@ -12,9 +12,9 @@ import java.io.Serializable;
 @Setter
 public class Teacher extends Person implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer teacherId;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Integer teacherId;
 
     private String schoolClass;
     private String section;
