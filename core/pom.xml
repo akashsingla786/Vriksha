@@ -15,6 +15,7 @@
 	<description>Vriksha core project</description>
 	<properties>
 		<java.version>17</java.version>
+		<liquibase.version>4.8.0</liquibase.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -39,6 +40,11 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-core</artifactId>
+			<version>${liquibase.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
