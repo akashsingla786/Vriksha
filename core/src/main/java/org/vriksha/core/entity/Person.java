@@ -9,6 +9,7 @@ import java.util.Date;
 
 @Getter
 @Setter
+@MappedSuperclass
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
