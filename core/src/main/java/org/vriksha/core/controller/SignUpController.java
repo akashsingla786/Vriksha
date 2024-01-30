@@ -17,8 +17,8 @@ public class SignUpController {
     @Autowired
     SignUpService signUpService;
     @PostMapping("/signUp")
-    public ResponseEntity signUp(@RequestBody GenericVO request) {
+    public ResponseEntity<?> signUp(@RequestBody GenericVO request) {
         GenericVO genericVO = signUpService.signUp(request);
-        return new ResponseEntity(genericVO, HttpStatus.OK);
+        return new ResponseEntity<GenericVO>(genericVO, HttpStatus.OK);
     }
 }
