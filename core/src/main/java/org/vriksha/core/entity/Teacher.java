@@ -9,13 +9,12 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-public class Student extends Person {
+public class Teacher extends Person{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long studentId;
+    private Integer teacherId;
 
-    private Long schoolRollNumber;
     private String schoolClass;
     private String section;
 
