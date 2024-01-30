@@ -12,9 +12,9 @@ import java.io.Serializable;
 @Setter
 public class Student extends Person implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long studentId;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Long studentId;
 
     private Long schoolRollNumber;
     private String schoolClass;
